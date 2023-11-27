@@ -1,1 +1,3 @@
 # cotdrank
+
+![chart](./chart.png)
