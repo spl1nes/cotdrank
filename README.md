@@ -1,3 +1,3 @@
 # cotdrank
 
-![chart](./chart.png)
+![chart](./rating_chart.png)
