@@ -56,7 +56,7 @@ We performed the following rating algorithm:
 2. Reduce the K-Factor for ELO calculation from 32 to 10
 3. Adjust the general rating factor from 1/10-th to 1/5-th.
 4. Test TrueSkill (not yet tested)
-5. If a player participated in the time attack/qualification but not in the COTD the player should be automatically rated with position 64 in their respective division in order to discurage players from rating manipulation through not participating if they are not happy with their division placement. (remark: However, it's still possible to game the system by leaving the time attack/qualification before it finishes. In such a case the game servers think the player didn't play at all even if the player finished a time during the time attack/qualification. In short, leaving the time attack/qualification before it concludes basically deletes all times of that player).
+5. If a player participated in the time attack/qualification but not in the COTD the player should be automatically rated with position 64 in their respective division in order to discurage players from rating manipulation through not participating if they are not happy with their division placement. (remark: However, it's still possible to game the system by leaving the time attack/qualification before it finishes. In such a case the game servers think the player didn't play at all even if the player finished a time during the time attack/qualification. In short, leaving the time attack/qualification before it concludes basically deletes all times of that player. This could be of course abused by the player if an official rating system ever gets implemented. For retrospective rating calculations this scenario shouldn't matter).
 
 ## Remark
 
