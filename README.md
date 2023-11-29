@@ -1,3 +1,59 @@
-# cotdrank
+# COTD Rank
+
+The goal of this project was to check if it would be possible to implement a player rating system for the game **Trackmania** from Nadeo Ubisoft and their "game mode" COTD.
+
+## Game Mode
+
+The cup of the day (COTD) is a daily event where:
+
+1. Qualifiction: Players play a time attack mode on a new map (the map is unknown to the players) for 15 minutes trying to achieve their best possible time
+2. After 15 minutes players get placed in divisions/matches of 64 players (division/match 1 = top 64 players, division/match 2 = top 65 - 128 player, ...) based on their performance during the time attack
+3. Rounds: After the qualification players play in their division of 64 players where every round a certain amount of players get eliminated (slowest 4, then slowest 2, then slowest) until only the last player remains
+4. The last player remaining is the winner of their devision.
+
+This free for all (FFA) tournament takes place every day at 7pm CET/CEST. This tournament is repeated on the same map at 1am CET/CEST (the next day) and 7am CET/CEST allowing players in other time zones to also enjoy this game mode. However, these tournaments are considered less prestegious since now the map is known, the amount of players are significantly less and generally speaking the more skilled players often only play the first edition (Trackmania is heavily focused on EU time zones).
+
+## Maps
+
+The maps used in this daily event/tournament can be be **very** different from each other since Trackmania allows different track surfaces and track styles. This means players can be good on one map style but bad on another map style. However, the best players still manage to get division 1 or at least 2 despite the widely different map styles.
+
+> If you want to create a rating/ranking it is recommended to only focus on the first COTD event/tournament played at 7pm CET/CEST.
+
+## Special events
+
+The first of every month is played on a fun map (also called troll COTD). This can be a map with fun elements (e.g. moving elements on the track) or very often "random" maps where it's considered random if you get a good time or not. 
+
+> If you want to create a purely skill based rating/ranking it would be recommended to ignore maps played on the first of the month.
+
+## Rating challenges
+
+1. Players have different skill levels based on map style and it's not possible to reliably get the map style from any database -> a rating per map style is very difficult to generate -> ratings are more volatile than e.g. in chess or CounterStrike, Dota2 etc.
+2. A player may choose not to participate in the COTD if they realize they are not getting placed in a good devision
+3. A player may only participate in COTD events/tournaments which feature the map style they are good at
+4. A naive FFA elo/glicko rating would result in very volatile ratings considering it's very realistic for players to become top 10 in one COTD but only top 64 in the next COTD.
+5. A player in division 2 (e.g. winner of division 2 has effectively the position 65 in a global ranking) is automatically considered worse than the last place in one devision higher (e.g. place 64 in devision 1) without directly playing against eachother. However, in reality it's very likely that the winner of devision 2 would have actually won against place 64 in devision 1.
+
+## Rating
+
+We performed the follwing rating algorithm:
+
+1. ELO/Glicko/Glicko2
+2. For visualization we averaged the elo of the last 10 COTD ratings (that is the 10 last played COTD by that player, not 10 last days)
+3. Calculate the rating by letting every player in a COTD play against every other player (e.g. global place 64 one against global place 65 etc.)
+4. Divide the calculated rating gain/loss by 10 to limit the gain/loss by 1/10-th. This leads to a more realistic gain/loss per COTD of 10 - 70 rating points.
+5. Set a maximum rating gain/loss of 300 per COTD (usually only relevant for the first 10 COTD matches)
+6. Limit the minimum elo a player can have to 100.
+
+### Result
+
+1. As a subjective feeling this already gets the rating 90% of the way to where it should be. The results make mostly sense apart from maybe some minor inconsistencies.
+2. The ratings were tested for the top players and the mid-level players but not for low/very low rated players.
+
+### Improvements
+
+1. Exclude the troll COTD at the beginning of every month
+2. Reduce K-Factor for ELO calculation from 32 to 10
+3. Adjust general rating factor from 1/10-th to 1/5-th.
+4. Test TrueSkill (not yet tested)
 
 ![chart](./rating_chart.png)
