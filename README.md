@@ -29,7 +29,7 @@ The first of every month is played on a fun map (also called troll COTD). This c
 
 At some point Trackmania also became available for various consoles/handheld devices. On such devices it's possible to disable crossplay. This places players with such settings in a separate COTD environment where they only play against players with the same device. This setting is only used by very few players.
 
-> If you want to create a rating/ranking it is recommended to ignore such environments and only focus on the general case where players have enabled cross play
+> If you want to create a rating/ranking it is recommended to ignore such environments and only focus on the general case where players have enabled crossplay
 
 ## Rating challenges
 
