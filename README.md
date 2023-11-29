@@ -25,6 +25,12 @@ The first of every month is played on a fun map (also called troll COTD). This c
 
 > If you want to create a purely skill based rating/ranking it would be recommended to ignore maps played on the first of the month.
 
+## Crossplay
+
+At some point Trackmania also became available for various consoles/handheld devices. On such devices it's possible to disable crossplay. This places players with such settings in a separate COTD environment where they only play against players with the same device. This setting is only used by very few players.
+
+> If you want to create a rating/ranking it is recommended to ignore such environments and only focus on the general case where players have enabled cross play
+
 ## Rating challenges
 
 1. Players have different skill levels based on map style, and it's not possible to reliably get the map style from any database -> a rating per map style is very difficult to generate -> ratings are more volatile than e.g. in chess or CounterStrike, Dota2 etc.
