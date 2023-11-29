@@ -13,11 +13,11 @@ The cup of the day (COTD) is a daily event where:
 
 This free for all (FFA) tournament takes place every day at 7pm CET/CEST. This tournament is repeated on the same map at 1am CET/CEST (the next day) and 7am CET/CEST allowing players in other time zones to also enjoy this game mode. However, these tournaments are considered less prestigious since now the map is known, the amount of players is significantly lower, and generally speaking, the more skilled players often only play the first edition (Trackmania is heavily focused on EU time zones).
 
+> If you want to create a rating/ranking it is recommended to only focus on the first COTD event/tournament played at 7pm CET/CEST.
+
 ## Maps
 
 The maps used in this daily event/tournament can be **very** different from each other, since Trackmania allows different track surfaces and track styles. This means players can be good on one map style but bad on another map style. However, the best players still manage to get into division 1 or at least division 2, despite the widely different map styles.
-
-> If you want to create a rating/ranking it is recommended to only focus on the first COTD event/tournament played at 7pm CET/CEST.
 
 ## Special events
 
