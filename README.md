@@ -27,7 +27,7 @@ The first of every month is played on a fun map (also called troll COTD). This c
 
 ## Crossplay
 
-At some point Trackmania also became available for various consoles/handheld devices. On such devices it's possible to disable crossplay. This places players with such settings in a separate COTD environment where they only play against players with the same device. This setting is only used by very few players.
+At some point Trackmania also became available for various console/handheld devices. On such devices it's possible to disable crossplay. This places players with such settings in a separate COTD environment where they only play against players with the same device. This setting is only used by very few players.
 
 > If you want to create a rating/ranking it is recommended to ignore such environments and only focus on the general case where players have enabled crossplay
 
@@ -45,7 +45,7 @@ We performed the following rating algorithm:
 
 1. ELO/Glicko/Glicko2
 2. For visualization, we averaged the ELO of the last 10 COTD ratings (that is the 10 last played COTD by that player, not the 10 last days)
-3. Calculate the rating by letting every player in a COTD play against every other player (e.g. global place 64 one against global place 65 etc.)
+3. Calculate the rating by letting every player in a COTD play against every other player (e.g. global place 64 won against global place 65 etc.)
 4. Divide the calculated rating gain/loss by 10 to limit the gain/loss by 1/10-th. This leads to a more realistic gain/loss per COTD of 10 - 70 rating points.
 5. Set a maximum rating gain/loss of 300 per COTD (usually only relevant for the first 10 COTD matches)
 6. Limit the minimum ELO a player can have to 100.
