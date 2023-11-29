@@ -58,6 +58,6 @@ We performed the following rating algorithm:
 
 ## Remark
 
-Since the Trackmania API (https://webservices.openplanet.dev/) is open (after creating a ubisoft+nadeo account) and the game mode is slightly different from many other games (small team games, 1v1, ...) this provides an interesting field and opportunity to study and experiment with. If you are interested in mathematics and/or rating systems I recommend playing around with different rating scenarios in Trackmania.
+Since the Trackmania API (https://webservices.openplanet.dev/) is open (after creating a ubisoft+nadeo account) and the game mode is different from many other games (small team games, 1v1, ...) this provides an interesting field and opportunity to study and experiment with. If you are interested in mathematics and/or rating systems I recommend playing around with different rating scenarios in Trackmania.
 
 ![chart](./rating_chart.png)
