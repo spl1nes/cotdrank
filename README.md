@@ -43,6 +43,7 @@ We performed the following rating algorithm:
 4. Divide the calculated rating gain/loss by 10 to limit the gain/loss by 1/10-th. This leads to a more realistic gain/loss per COTD of 10 - 70 rating points.
 5. Set a maximum rating gain/loss of 300 per COTD (usually only relevant for the first 10 COTD matches)
 6. Limit the minimum ELO a player can have to 100.
+7. A player who participated in the time attack/qualification but not in the COTD is ignored on that day.
 
 ### Result
 
@@ -55,6 +56,7 @@ We performed the following rating algorithm:
 2. Reduce the K-Factor for ELO calculation from 32 to 10
 3. Adjust the general rating factor from 1/10-th to 1/5-th.
 4. Test TrueSkill (not yet tested)
+5. If a player participated in the time attack/qualification but not in the COTD the player should be automatically rated with position 64 in their respective division in order to discurage players from rating manipulation through not participating if they are not happy with their division placement. (remark: However, it's still possible to game the system by leaving the time attack/qualification before it finishes. In such a case the game servers think the player didn't play at all even if the player finished a time during the time attack/qualification. In short, leaving the time attack/qualification before it concludes basically deletes all times of that player).
 
 ## Remark
 
