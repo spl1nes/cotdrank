@@ -1,5 +1,5 @@
 <?php
-/*
+/* Code below not working due to DB and model change.
 include __DIR__ . '/../phpOMS/Autoloader.php';
 include __DIR__ . '/../db.php';
 include __DIR__ . '/../config.php';
